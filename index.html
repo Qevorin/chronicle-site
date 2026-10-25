@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronicle of Humanity — Official Credits & Sources</title>
+  <meta name="description" content="Official archival credits, music attributions, sound effects licenses, and historical sources for Chronicle of Humanity.">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #14161d;
+      --border: #262936;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #d4af37;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1b1e28 0%, var(--bg) 70%);
+    }
+    .brand-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .brand-subtitle {
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0.5rem auto 1.25rem;
+      font-size: 0.95rem;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .social-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    .social-links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      flex: 1;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      color: #fff;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    td { color: var(--muted); }
+    a.inline-link { color: var(--accent); text-decoration: none; }
+    a.inline-link:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footer-nav {
+      margin-bottom: 0.75rem;
+    }
+    .footer-nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 0.75rem;
+    }
+    .footer-nav a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="brand-title">Chronicle of Humanity</h1>
+    <p class="brand-subtitle">
+      Short-form and long-form historical documentaries, primary source reconstructions, and audiovisual production credits.
+    </p>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@ChronicleOfHumanity" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/chronicleofhumanity/" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/ChronicleOfHumanity" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@chronicleofhumanity" rel="noopener">TikTok</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="credits">
+      <h2>Episode Credits, Audio Attributions & Sources</h2>
+      <p>
+        Every episode produced by <strong>Chronicle of Humanity</strong> (operated by Qevorin, MB) attributes its Creative Commons (CC-BY) sound effects from Freesound.org, licensed voice synthesis, original musical compositions, and historical references below.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Episode / ID</th>
+            <th>Title</th>
+            <th>Audio, SFX (CC-BY) & Visual Credits</th>
+          </tr>
+        </thead>
+        <tbody id="episode-credits-list">
+          <tr>
+            <td><code>EP-000</code></td>
+            <td>Channel Trailer & Production Pipeline</td>
+            <td>Original narration via ElevenLabs Creator license; licensed SFX via Freesound.org (CC0 / CC-BY attributed per release).</td>
+          </tr>
+          <!-- Automated deploy pipeline appends episode rows here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="platform">
+      <h2>About Our Publishing Infrastructure (`video-engine`)</h2>
+      <p>
+        Chronicle of Humanity utilizes an internal, proprietary content production and multi-platform distribution system (<strong>video-engine</strong>) operated exclusively by <strong>Qevorin, MB</strong>. Our software integrates with the YouTube Data & Analytics API Services, Meta Graph API, and TikTok Content Posting API to publish historical documentaries and analyze audience engagement across our official channels.
+      </p>
+      <p style="margin-bottom: 0;">
+        For legal inquiries, copyright questions, or data privacy requests, please review our <a class="inline-link" href="/privacy">Privacy Policy</a> and <a class="inline-link" href="/terms">Terms of Service</a>, or contact us at <a class="inline-link" href="mailto:info@qevorin.lt">info@qevorin.lt</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="/">Credits Home</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="mailto:info@qevorin.lt">Contact</a>
+    </div>
+    <div>
+      &copy; 2026 Qevorin, MB (Giedraičių g. 39-R53, LT-09302 Vilnius, Lithuania). All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
