@@ -1,2 +1,0 @@
-# chronicle-site
-Chronicle-site
