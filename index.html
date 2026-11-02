@@ -29,21 +29,24 @@
     }
     header {
       border-bottom: 1px solid var(--border);
-      padding: 2.5rem 1.5rem;
+      padding: 0 0 2.5rem;
       text-align: center;
-      background: radial-gradient(circle at top, #1b1e28 0%, var(--bg) 70%);
+      background: var(--bg);
     }
-    .brand-title {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #fff;
+    .brand-title { margin: 0 0 1.5rem; line-height: 0; }
+    .brand-banner {
+      display: block;
+      width: 100%;
+      height: clamp(100px, 19.53vw, 500px);
+      object-fit: cover;
+      object-position: center;
+      border-bottom: 1px solid var(--border);
     }
+    .brand-subtitle, .social-links { padding: 0 1.5rem; }
     .brand-subtitle {
       color: var(--muted);
       max-width: 640px;
-      margin: 0.5rem auto 1.25rem;
+      margin: 0 auto 1.25rem;
       font-size: 0.95rem;
     }
     .social-links {
@@ -131,7 +134,9 @@
 <body>
 
   <header>
-    <h1 class="brand-title">Chronicle of Humanity</h1>
+    <h1 class="brand-title">
+      <img class="brand-banner" src="/banner-2560.jpg" srcset="/banner-1280.jpg 1280w, /banner-2560.jpg 2560w" sizes="100vw" width="2560" height="500" alt="Chronicle of Humanity — All of human history, in order.">
+    </h1>
     <p class="brand-subtitle">
       Short-form and long-form historical documentaries, primary source reconstructions, and audiovisual production credits.
     </p>
